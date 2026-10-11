@@ -1,0 +1,8 @@
+Objective,Recommended Pipeline,PR-AUC,Train time,ECE
+Maximize PR-AUC,A — class weight,0.8187 ± 0.0025,241s (median),0.0584
+Best calibration (no synth),A + isotonic post-hoc,0.8161,~250s,0.0005
+Best SMOTE calibration,C — RUS+SMOTE,0.8030 ± 0.0016,210s (median),0.0449
+Modern ensemble baseline,D — BalancedRF/LGB,See 4B results,See 4B,See 4B
+Minimize runtime,B — RUS only,0.7108 ± 0.0062,57s (median),0.1347
+Best overall compromise,A + isotonic post-hoc,0.8161,~250s,0.0005
+Minimize expected cost,D — BalancedRF/LGB,Best all cost scenarios,See 4B,See 4B

@@ -1,0 +1,59 @@
+{
+  "dataset": "Elliptic Bitcoin Transactions",
+  "features_csv": "C:\\Users\\Nouha Laataoui\\OneDrive - International School Of Elite - ISE\\Bureau\\My GP\\Datasets\\Elliptic Bitcoin Transactions Dataset (Kaggle)\\elliptic_txs_features.csv",
+  "n_labeled": 46564,
+  "fraud_rate": 0.09760759384932566,
+  "n_features": 165,
+  "time_steps": 49,
+  "n_graph_edges": 234356,
+  "splits": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "models_tested": [
+    "Logistic Regression",
+    "Random Forest",
+    "XGBoost",
+    "LightGBM"
+  ],
+  "imbalance_strategy": "class_weight=balanced (no SMOTE/resampling)",
+  "sensitivity": {
+    "imbalance_ratios": [
+      0.001,
+      0.005,
+      0.01,
+      0.05
+    ],
+    "size_fractions": [
+      0.01,
+      0.05,
+      0.1,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "repeats": 5,
+    "bootstrap_samples": 300
+  },
+  "best_model_by_pr_auc": "LightGBM",
+  "best_pr_auc": 0.9847718765362128,
+  "calibration": {
+    "Logistic Regression": {
+      "brier": 0.09745198167663298,
+      "ece": 0.14434515673615966
+    },
+    "Random Forest": {
+      "brier": 0.020853065293311386,
+      "ece": 0.05930924374975934
+    },
+    "XGBoost": {
+      "brier": 0.013815924525260925,
+      "ece": 0.025409818343610186
+    },
+    "LightGBM": {
+      "brier": 0.009387940582522417,
+      "ece": 0.014340476617982899
+    }
+  }
+}

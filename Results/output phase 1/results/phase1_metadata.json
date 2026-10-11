@@ -1,0 +1,87 @@
+{
+  "dataset": "C:\\Users\\Nouha Laataoui\\OneDrive - International School Of Elite - ISE\\Bureau\\My GP\\Datasets\\Credit Card Fraud Detection (Kaggle).csv",
+  "n_rows": 283726,
+  "fraud_prevalence": 0.001667101358352777,
+  "features_used": [
+    "Time",
+    "Amount",
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6",
+    "V7",
+    "V8",
+    "V9",
+    "V10",
+    "V11",
+    "V12",
+    "V13",
+    "V14",
+    "V15",
+    "V16",
+    "V17",
+    "V18",
+    "V19",
+    "V20",
+    "V21",
+    "V22",
+    "V23",
+    "V24",
+    "V25",
+    "V26",
+    "V27",
+    "V28"
+  ],
+  "splits": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "models_tested": [
+    "Logistic Regression",
+    "Random Forest",
+    "XGBoost",
+    "LightGBM"
+  ],
+  "imbalance_strategy": "class_weight=balanced (no SMOTE/resampling)",
+  "sensitivity": {
+    "imbalance_ratios": [
+      0.001,
+      0.005,
+      0.01,
+      0.05
+    ],
+    "size_fractions": [
+      0.01,
+      0.05,
+      0.1,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "repeats": 5,
+    "bootstrap_samples": 300
+  },
+  "best_model_by_pr_auc": "XGBoost",
+  "best_pr_auc": 0.8088292180093891,
+  "calibration": {
+    "Logistic Regression": {
+      "brier": 0.022764919921687273,
+      "ece": 0.07146100396580994
+    },
+    "Random Forest": {
+      "brier": 0.0011937947861425373,
+      "ece": 0.01109060394060905
+    },
+    "XGBoost": {
+      "brier": 0.0010086449328809977,
+      "ece": 0.0028669282554663325
+    },
+    "LightGBM": {
+      "brier": 0.000737379950197819,
+      "ece": 0.0013720806308511893
+    }
+  }
+}

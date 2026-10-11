@@ -1,0 +1,10 @@
+Contribution,Implementation,Impact
+Leakage-safe preprocessing,Split before statistics; train-only fitting,Methodological validity
+Scalable loading pipeline,"float32 + Pickle cache (CSV→Pickle, repeat runs ~5-10x faster)",Reproducibility
+Joblib preprocessing cache,~103.9s → ~0.1s,Scalability
+Three-pipeline comparison,A (class weight) vs B (RUS) vs C (RUS+SMOTE),Imbalance strategy insight
+Post-hoc calibration,Platt / Isotonic on LightGBM Pipeline A,Calibration improvement
+Precision@K / Recall@K,Business-oriented evaluation at top 1/5/10%,Operational relevance
+Cost-sensitive analysis,"FN:FP cost ratios 10:1, 50:1, 100:1",Deployment guidance
+Statistical robustness,"N=10 seeds, paired t-test + Wilcoxon (p=0.0020), Bonferroni",Result reliability
+Cross-dataset validation,Phases 1/2/3 across banking/e-comm/crypto,Generalizability

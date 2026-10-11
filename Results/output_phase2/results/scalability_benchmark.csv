@@ -1,0 +1,6 @@
+Step,Original,Optimized,First-run (s),Cached-run (s),Speedup
+Data loading,"CSV float64, single read (~31.3s, ~1600 MB)",float32 chunks + Pickle cache,31.3,1.79,~17x
+Preprocessing + feature engineering,"Recomputed every run, stats on full dataset",Leakage-safe (train-only stats) + joblib cache,103.9,N/A,~1x
+Pipeline A (class weight),Not benchmarked separately,No resampling,0.0,From cache,Instant
+Pipeline B (RUS only),Not tested,RandomUnderSampler 1:1,0.18,From cache,N/A
+Pipeline C (RUS+SMOTE),"Embedded in preprocessing, untimed","Isolated, timed, cached",31.2,From cache,N/A

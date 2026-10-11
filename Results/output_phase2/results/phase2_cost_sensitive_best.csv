@@ -1,0 +1,4 @@
+scenario,pipeline,normalized_cost
+Aggressive (100:1),D_balanced_forest,0.896818
+Conservative (10:1),D_balanced_forest,0.095178
+Moderate (50:1),D_balanced_forest,0.451463

@@ -1,0 +1,49 @@
+pipeline,model,scenario,fn_cost,fp_cost,FN,FP,normalized_cost
+A_class_weight,Logistic Regression,Conservative (10:1),10,1,1849,1812,0.229191
+A_class_weight,Logistic Regression,Moderate (50:1),50,1,1849,1812,1.064133
+A_class_weight,Logistic Regression,Aggressive (100:1),100,1,1849,1812,2.107811
+A_class_weight,Random Forest,Conservative (10:1),10,1,1543,603,0.180998
+A_class_weight,Random Forest,Moderate (50:1),50,1,1543,603,0.877762
+A_class_weight,Random Forest,Aggressive (100:1),100,1,1543,603,1.748716
+A_class_weight,XGBoost,Conservative (10:1),10,1,1190,545,0.140493
+A_class_weight,XGBoost,Moderate (50:1),50,1,1190,545,0.677854
+A_class_weight,XGBoost,Aggressive (100:1),100,1,1190,545,1.349556
+A_class_weight,LightGBM,Conservative (10:1),10,1,872,419,0.103171
+A_class_weight,LightGBM,Moderate (50:1),50,1,872,419,0.496935
+A_class_weight,LightGBM,Aggressive (100:1),100,1,872,419,0.98914
+B_RUS_only,Logistic Regression,Conservative (10:1),10,1,2027,1293,0.243427
+B_RUS_only,Logistic Regression,Moderate (50:1),50,1,2027,1293,1.158747
+B_RUS_only,Logistic Regression,Aggressive (100:1),100,1,2027,1293,2.302898
+B_RUS_only,Random Forest,Conservative (10:1),10,1,1608,855,0.191181
+B_RUS_only,Random Forest,Moderate (50:1),50,1,1608,855,0.917296
+B_RUS_only,Random Forest,Aggressive (100:1),100,1,1608,855,1.82494
+B_RUS_only,XGBoost,Conservative (10:1),10,1,1306,871,0.157268
+B_RUS_only,XGBoost,Moderate (50:1),50,1,1306,871,0.747011
+B_RUS_only,XGBoost,Aggressive (100:1),100,1,1306,871,1.48419
+B_RUS_only,LightGBM,Conservative (10:1),10,1,1084,863,0.132116
+B_RUS_only,LightGBM,Moderate (50:1),50,1,1084,863,0.621612
+B_RUS_only,LightGBM,Aggressive (100:1),100,1,1084,863,1.233481
+C_RUS_SMOTE,Logistic Regression,Conservative (10:1),10,1,2039,1057,0.242117
+C_RUS_SMOTE,Logistic Regression,Moderate (50:1),50,1,2039,1057,1.162857
+C_RUS_SMOTE,Logistic Regression,Aggressive (100:1),100,1,2039,1057,2.313781
+C_RUS_SMOTE,Random Forest,Conservative (10:1),10,1,1425,823,0.170161
+C_RUS_SMOTE,Random Forest,Moderate (50:1),50,1,1425,823,0.813639
+C_RUS_SMOTE,Random Forest,Aggressive (100:1),100,1,1425,823,1.617988
+C_RUS_SMOTE,XGBoost,Conservative (10:1),10,1,1184,624,0.140707
+C_RUS_SMOTE,XGBoost,Moderate (50:1),50,1,1184,624,0.675359
+C_RUS_SMOTE,XGBoost,Aggressive (100:1),100,1,1184,624,1.343674
+C_RUS_SMOTE,LightGBM,Conservative (10:1),10,1,911,468,0.108127
+C_RUS_SMOTE,LightGBM,Moderate (50:1),50,1,911,468,0.519502
+C_RUS_SMOTE,LightGBM,Aggressive (100:1),100,1,911,468,1.033721
+D_balanced_forest,Logistic Regression,Conservative (10:1),10,1,1849,1812,0.229191
+D_balanced_forest,Logistic Regression,Moderate (50:1),50,1,1849,1812,1.064133
+D_balanced_forest,Logistic Regression,Aggressive (100:1),100,1,1849,1812,2.107811
+D_balanced_forest,Random Forest,Conservative (10:1),10,1,1598,595,0.187117
+D_balanced_forest,Random Forest,Moderate (50:1),50,1,1598,595,0.908716
+D_balanced_forest,Random Forest,Aggressive (100:1),100,1,1598,595,1.810716
+D_balanced_forest,XGBoost,Conservative (10:1),10,1,1190,545,0.140493
+D_balanced_forest,XGBoost,Moderate (50:1),50,1,1190,545,0.677854
+D_balanced_forest,XGBoost,Aggressive (100:1),100,1,1190,545,1.349556
+D_balanced_forest,LightGBM,Conservative (10:1),10,1,789,541,0.095178
+D_balanced_forest,LightGBM,Moderate (50:1),50,1,789,541,0.451463
+D_balanced_forest,LightGBM,Aggressive (100:1),100,1,789,541,0.896818
